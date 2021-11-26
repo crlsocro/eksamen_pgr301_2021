@@ -28,7 +28,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-/*@RunWith(SpringRunner.class)
+@RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ReallyShakyBankingCoreSystemServiceTest {
 
@@ -85,4 +85,3 @@ public class ReallyShakyBankingCoreSystemServiceTest {
         assertEquals(account.getId(), id);
     }
 }
-*/
