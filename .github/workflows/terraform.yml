@@ -78,7 +78,4 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
         working-directory: infra
-        
-      - name: Terraform Init
-        run: terraform init
-        working-directory: infra
+
