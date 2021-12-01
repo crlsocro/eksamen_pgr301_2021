@@ -121,7 +121,7 @@ Access Key og Secret Access Key, deretter lagre de dataene som blir skapt på AW
         
         backend "s3" 
        {
-        bucket = "pgr301-2004-terraform" // " " i " " skal man ha et valgfritt navn
+        bucket = "pgr301-2004-terraform" // i " " skal man ha et valgfritt navn
         key    = "chli009/terraform_2021_pgr301_kandidat_2004.state" // navn på bruker/et valgfritt navn . state
         region = "eu-west-1" 
        }
