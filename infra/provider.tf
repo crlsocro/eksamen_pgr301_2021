@@ -12,10 +12,9 @@ terraform {
   }
 
 }
-provider "aws" {
-  profile = "default"
-  region  = "eu-west-1"
-}
+
+# For push til ecr via terraform.io så fikk jeg inspirasjon fra denne
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository
 
 resource "aws_ecr_repository" "ecr" {
   name                 = "2004"
@@ -23,10 +22,6 @@ resource "aws_ecr_repository" "ecr" {
 
   image_scanning_configuration {
     scan_on_push = true
-  }
-
-  tags = {
-    name = "ecr"
   }
 
 }
