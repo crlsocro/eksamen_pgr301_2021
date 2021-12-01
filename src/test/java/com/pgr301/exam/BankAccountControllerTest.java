@@ -1,5 +1,7 @@
 package com.pgr301.exam;
 
+//Jeg prøvde å lage en unit test, men klarte det ikke helt til. Pipelinen skal funke da men har ingen tester som faktisk tester.
+//Fikk mange BackEndException da jeg prøvde å kjøre tester...
 
 import com.pgr301.exam.model.Account;
 import org.junit.Test;

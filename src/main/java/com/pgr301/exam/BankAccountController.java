@@ -26,8 +26,10 @@ import static java.util.Optional.ofNullable;
 @RestController
 public class BankAccountController implements ApplicationListener<ApplicationReadyEvent> {
 
-    private Map<String, Account> theBank = new HashMap();
+    //private Map<String, Account> theBank = new HashMap();
 
+    //Her har jeg prøvd forskjellige ting for å kunne lese data med  MeterRegistry. Men fikk ikke det til.
+    //Prøvde mitt beste å gjøre oppgaven som i forelesning 08.
 
     @Autowired
     private MeterRegistry meterRegistry;
@@ -70,7 +72,6 @@ public class BankAccountController implements ApplicationListener<ApplicationRea
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent applicationReadyEvent) {
-        Gauge.builder("account_count",  theBank, b -> b.values().size()).register(meterRegistry);
     }
 
     @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "video not found")

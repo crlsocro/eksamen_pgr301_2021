@@ -1,10 +1,17 @@
 name: "Terraform"
 
+#Her har jeg tatt inspirasjon fra forelesning 07. Jeg har prøvd litt forskjellig, og den skal funke.
+#Slik jeg forsto oppgaven så skal provider.tf være i infra-mappen.
+#For at provider skal få kjørt, bruker jeg  working-directory: infra på alle terraform oppgaver
+
 on:
   push:
-    branches:
-      - main
+
+     branches: [ main ]
+
   pull_request:
+
+    branches: [ main ]
 
 jobs:
   terraform:

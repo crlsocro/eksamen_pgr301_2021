@@ -3,6 +3,10 @@
 
 name: Java CI with Maven
 
+#Standar github actions for Java med Maven
+#For laging av artifact og jar så brukte jeg denne siden som inspirasjon
+#https://docs.github.com/en/actions/advanced-guides/storing-workflow-data-as-artifacts
+
 on:
   push:
     branches: [ main ]
@@ -23,9 +27,11 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: maven
-    - name: Run the Maven verify phase
+    - name: Run Maven Verify
       run: mvn --batch-mode --update-snapshots verify
-    - run: mkdir staging && cp target/*.jar staging
+
+    - name: Jar artifact staging mkdir
+      run: mkdir staging && cp target/*.jar staging
     - uses: actions/upload-artifact@v2
       with:
         name: Package

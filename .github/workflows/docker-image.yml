@@ -1,5 +1,9 @@
 name: Docker Image CI
 
+#Jeg fikk inspirasjon fra marketplace på github til å pushe til ecr
+
+#https://github.com/marketplace/actions/amazon-ecr-login-action-for-github-actions
+
 on:
   push:
     branches: [ main ]
@@ -36,6 +40,7 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
+    #Fra Github Actions når jeg skulle konfigurere Docker Image
 
     - uses: actions/checkout@v2
     - name: docker login
