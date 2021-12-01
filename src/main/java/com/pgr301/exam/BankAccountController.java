@@ -29,7 +29,7 @@ public class BankAccountController implements ApplicationListener<ApplicationRea
     //private Map<String, Account> theBank = new HashMap();
 
     //Her har jeg prøvd forskjellige ting for å kunne lese data med  MeterRegistry. Men fikk ikke det til.
-    //Prøvde mitt beste å gjøre oppgaven som i forelesning 08.
+    //Prøvde mitt beste å gjøre oppgaven som i forelesning 08 men jeg klarte ikke oppgaven som sagt.
 
     @Autowired
     private MeterRegistry meterRegistry;
