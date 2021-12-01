@@ -4,7 +4,7 @@ Readme file pgr301-H2021
 
 # DEVOPS EKSAMEN H2021
 
-###Generell info om denne readme-filen:
+### Generell info om denne readme-filen:
 
 I denne filen så har jeg svart på spørsmålene i henhold til eksamensoppgavene. Jeg har også med forklaring på hvordan jeg løste de forskjellige oppgavene.
 Jeg har tatt inspirasjon fra forelesningene og har prøvd ettet mitt beste evne å svare på oppgavene.
@@ -67,18 +67,18 @@ Dette blir uansett et waste siden ikke «prater» sammen. Det kan også fort bli
 Derfor er det enda bedre med en Single-Piece Flow hvor litt og litt kode blir pushet og testet.     
 
 
-##Oppgave Pipeline
+## Oppgave Pipeline
 
 Jeg har ikke skrevet enhetstest, men har laget en pipeline som sjekker om koden kompilerer eller ikke.
 Maven workflowen skal bygge en jar fil
 
-##Oppgave - Feedback
+## Oppgave - Feedback
 
 Jeg prøvde å få med micrometer men klarte det ikke. 
 Har med kode fra forelesning 8 hvor vi lærte om micrometer
 Dette er ikke egen kode, men har prøvd å få det til.
 
-##Oppgave Terraform
+## Oppgave Terraform
 
 Terraform-oppgaven har jeg løst. Jeg har laget en S3 bucket i klassens AWS konto. 
 Navnet på bucket er pgr301-!kandidatnummer!-terraform og regionen er eu-west-1
@@ -144,7 +144,7 @@ Man gjør følgende:
 
 4. Samme operasjon som over, men legger til AWS_SECRET_ACCESS_KEY og i Value:Secret access key Så add secret 
 
-##Oppgave - Docker
+## Oppgave - Docker
 Jeg har skrevet en Dockerfile til dette repo'et som er inspirert fra forelesning.
 Har også laget en Github Actions som bygger et Docker Image og pusher denne til ECR som ble laget i Terraform oppgaven.
 
